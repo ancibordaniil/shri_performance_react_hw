@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const Event = ({ icon, iconLabel, title, subtitle, slim, onSize }) => {
+const Event = React.memo(({ icon, iconLabel, title, subtitle, slim, onSize }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -23,6 +23,6 @@ const Event = ({ icon, iconLabel, title, subtitle, slim, onSize }) => {
       </button>
     </li>
   );
-};
+});
 
 export default Event;
