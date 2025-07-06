@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="/" className="header__logo" aria-label="Яндекс.Дом">123</a>
+      <a href="/" className="header__logo" aria-label="Яндекс.Дом"></a>
       <button 
         className="header__menu" 
         aria-expanded={expanded} 
